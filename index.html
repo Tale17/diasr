@@ -83,51 +83,6 @@
 </nav> -->
 
 
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <!-- Abstract. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-2">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-            Personalized multi-subject video generation is a
-            promising direction within the field of controllable
-            video generation; however, existing methods
-            face challenges in maintaining cross-frame
-            identity consistency and incur high computational
-            overhead. To address these issues, we propose
-            DiasR, an efficient framework that integrates
-            Dual-Modal Identity-Anchored Alignment and a
-            novel Sparse Routing Strategy. The Dual-Modal
-            Identity-Anchored Alignment employs learnable
-            identity queries to align visual and textual modalities
-            with ground-truth subject masks, thereby mitigating
-            cross-frame identity drift. The Sparse Routing
-            Strategy dynamically routes video tokens to
-            relevant subjects and groups them through bucket
-            aggregation, reducing computational overhead
-            and alleviating identity entanglement induced by
-            redundant tokens. We also construct MuSA-2M,
-            a large-scale dataset comprising 2 million annotated
-            samples equipped with subject-level masks,
-            which fills the gap in existing multi-subject video
-            datasets. Experiments conducted on the OpenS2VEval
-            benchmark demonstrate that our method
-            achieves superior performance in identity consistency,
-            text fidelity, and video naturalness. Notably,
-            it maintains a nearly constant inference time as
-            the number of reference subjects increases, outperforming
-            existing baselines in both efficiency
-            and generation quality for scenarios involving
-            multi-subject interactions.
-          </p>
-        </div>
-      </div>
-    </div>
-    <!--/ Abstract. -->
-  </div>
-</section>
 
 
 <section class="hero">
@@ -175,7 +130,97 @@
   </div>
 </section>
 
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-2">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Personalized multi-subject video generation is a
+            promising direction within the field of controllable
+            video generation; however, existing methods
+            face challenges in maintaining cross-frame
+            identity consistency and incur high computational
+            overhead. To address these issues, we propose
+            DiasR, an efficient framework that integrates
+            Dual-Modal Identity-Anchored Alignment and a
+            novel Sparse Routing Strategy. The Dual-Modal
+            Identity-Anchored Alignment employs learnable
+            identity queries to align visual and textual modalities
+            with ground-truth subject masks, thereby mitigating
+            cross-frame identity drift. The Sparse Routing
+            Strategy dynamically routes video tokens to
+            relevant subjects and groups them through bucket
+            aggregation, reducing computational overhead
+            and alleviating identity entanglement induced by
+            redundant tokens. We also construct MuSA-2M,
+            a large-scale dataset comprising 2 million annotated
+            samples equipped with subject-level masks,
+            which fills the gap in existing multi-subject video
+            datasets. Experiments conducted on the OpenS2VEval
+            benchmark demonstrate that our method
+            achieves superior performance in identity consistency,
+            text fidelity, and video naturalness. Notably,
+            it maintains a nearly constant inference time as
+            the number of reference subjects increases, outperforming
+            existing baselines in both efficiency
+            and generation quality for scenarios involving
+            multi-subject interactions.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+  </div>
+</section>
 
+
+<section class="section hero is-small">
+  <div class="container is-max-desktop">
+    <!-- Method. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-2">Method</h2>
+        <h2 class="title is-4">Framework</h2>
+        <img src="./static/images/main_V3.png"
+          class="interpolation-image"
+          alt="Interpolate start reference image."/>
+        <div class="content has-text-justified">
+          <p>
+            Framework of our DiasR. It takes noisy latents, multi-subject reference images, and text prompts as inputs, and integrates a
+            Dual-Modal Identity-Anchored Alignment mechanism to anchor the identity of each subject, together with a Sparse Routing Strategy that
+            mitigates the extra computational overhead induced by subject tokens.
+          </p>
+        </div>
+        <h2 class="title is-4">Sparse Routing Strategy</h2>
+        <img src="./static/images/dataset_v2.png"
+          class="interpolation-image"
+          alt="Interpolate start reference image."/>
+        <div class="content has-text-justified">
+          <p>
+            Left: Subject-level routing
+            selects the most relevant subject for each query token. Right:
+            Bucketed attention computes attention independently for each
+            subject bucket, avoiding performance degradation while preserving
+            cross-subject interactions.
+          <p>
+        </div>
+        <h2 class="title is-4">Paired Concept Disentangled Dataset</h2>
+        <img src="./static/images/dataset_v2.png"
+          class="interpolation-image"
+          alt="Interpolate start reference image."/>
+        <div class="content has-text-justified">
+          <p>
+            Dataset construction pipeline of MuSA-2M.
+          <p>
+        </div>
+      </div>
+    </div>
+    <!--/ Method. -->
+  </div>
+</section>
 
 
 <section class="section" id="BibTeX">
