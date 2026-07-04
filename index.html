@@ -221,7 +221,7 @@
           </p>
         </div>
         <h2 class="title is-4">Sparse Routing Strategy</h2>
-        <img src="./static/images/dataset_v2.png"
+        <img src="./static/images/main_sub.png"
           class="interpolation-image"
           alt="Interpolate start reference image."/>
         <div class="content has-text-justified">
@@ -248,6 +248,48 @@
   </div>
 </section>
 
+
+<section class="section hero is-small">
+  <div class="container is-max-desktop">
+    <!-- Experiments. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-2">Experiments</h2>
+        <h2 class="title is-4">Qualitative Comparison</h2>
+        <img src="./static/images/compare_V2.png"
+          class="interpolation-image"
+          alt="Interpolate start reference image."/>
+        <div class="content has-text-justified">
+          <p>
+            DiasR consistently preserve the identities of multiple subjects and correctly models interactions across different subject groups.
+          </p>
+        </div>
+        <h2 class="title is-4">Quantitative Comparison</h2>
+        <img src="./static/images/compare_tab.png"
+          class="interpolation-image"
+          alt="Interpolate start reference image."/>
+        <div class="content has-text-justified">
+          <p>
+            On OpenS2V-Eval, DiasR achieves the best performance on FaceSim (60.66%) and NexusScore (47.40%), 
+            and reaches the highest overall TotalScore (57.79%), demonstrating superior identity preservation and generation quality.
+          <p>
+        </div>
+        <h2 class="title is-4">Computational Performance Comparison</h2>
+        <img src="./static/images/time_heng.png"
+          class="interpolation-image"
+          alt="Interpolate start reference image."/>
+        <div class="content has-text-justified">
+          <p>
+            The sampling time and the floating-point operations (FLOPs) versus the number of reference subjects, 
+            DiasR exhibit nearly constant inference time as the number of reference entities increases. 
+
+          <p>
+        </div>
+      </div>
+    </div>
+    <!--/ Experiments. -->
+  </div>
+</section>
 
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
