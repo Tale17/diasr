@@ -130,21 +130,28 @@
   </div>
 </section>
 
-<!-- <section class="hero teaser">
+<section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <video id="teaser" controls height="100%">
-        <source src="./static/videos/DiasR.mp4"
-                type="video/mp4">
+      <video 
+        id="teaser" 
+        controls
+        playsinline
+        poster="./static/images/teaser-poster.jpg"
+        preload="metadata"
+        class="teaser-video"
+      >
+        <source src="./static/videos/DiasR.mp4" type="video/mp4">
+        您的浏览器不支持视频播放，请<a href="./static/videos/DiasR.mp4">点击此处下载</a>观看。
       </video>
-      <h2 class="subtitle has-text-centered">
+      <h2 class="subtitle has-text-centered mt-5">
         DiasR is an efficient framework for personalized multi-subject video generation, 
         achieving state-of-the-art identity consistency with nearly constant 
         inference time as the number of subjects grows.
       </h2>
     </div>
   </div>
-</section> -->
+</section>
 
 <!-- state-of-the-art -->
 
